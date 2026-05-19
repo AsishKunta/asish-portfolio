@@ -77,4 +77,4 @@ npm run dev
 
 ## Live Portfolio
 
-[Visit Portfolio](https://asish-portfolio-r4c4evgxv-asishkuntas-projects.vercel.app/)
+[Asish Portfolio](https://asish-portfolio-r4c4evgxv-asishkuntas-projects.vercel.app/)
