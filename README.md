@@ -71,6 +71,7 @@ Focused on role-based systems, authentication flows, and scalable API design.
 ```bash
 npm install
 npm run dev
+```
 
 ---
 
