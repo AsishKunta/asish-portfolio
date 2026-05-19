@@ -19,8 +19,8 @@ function App() {
             Projects
           </a>
 
-          <a href="#skills" className="transition-colors duration-200 hover:text-cyan-300">
-            Skills
+          <a href="#focus" className="transition-colors duration-200 hover:text-cyan-300">
+            Focus
           </a>
 
           <a href="#contact" className="transition-colors duration-200 hover:text-cyan-300">
@@ -29,20 +29,38 @@ function App() {
         </div>
       </nav>
 
-      <section className="mx-auto max-w-6xl px-6 py-24">
-        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
-          Software Engineering Portfolio
-        </p>
+      <section className="relative overflow-hidden mx-auto max-w-6xl px-6 py-20">
+        <div className="pointer-events-none absolute inset-0">
+          <div className="hero-grid absolute inset-0" />
+          <div className="hero-glow absolute inset-0" />
+        </div>
 
-        <h2 className="max-w-4xl text-5xl font-bold tracking-tight text-white md:text-7xl">
-          Software engineer focused on systems, simulation, and scalable application development.
-        </h2>
+        <div className="relative z-10">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-cyan-400">
+            Systems Engineering • Backend • Architecture
+          </p>
 
-        <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300">
-          I build engineering-focused projects centered around system design, simulation architecture, backend services, scheduling algorithms, and production-ready software development.
-        </p>
+          <h2 className="max-w-3xl text-4xl font-semibold tracking-tight text-white leading-tight md:text-5xl">
+            Engineering scalable systems, scheduling architectures, and production-grade software.
+          </h2>
 
-        <div className="mt-10 flex flex-wrap gap-4">
+          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 md:text-lg">
+            I build engineering-focused projects centered around system design, simulation architecture, backend services, scheduling algorithms, and production-ready software development.
+          </p>
+
+          <div className="mt-6 flex flex-col gap-2 text-sm text-slate-400 md:flex-row md:items-center md:gap-4">
+            <span className="inline-flex items-center gap-2 text-slate-400">
+              <svg viewBox="0 0 28 20" className="h-4 w-auto opacity-80 text-slate-400" aria-hidden="true">
+                <rect x="0" y="0" width="28" height="20" rx="4" fill="currentColor" opacity="0.12" />
+                <text x="50%" y="58%" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="10" fontWeight="700" fill="currentColor">UNT</text>
+              </svg>
+              <span>B.S. Computer Science — University of North Texas</span>
+            </span>
+            <span className="hidden h-4 w-px bg-slate-700 md:inline-block" />
+            <span>Aug 2023 – May 2027</span>
+          </div>
+
+          <div className="mt-10 flex flex-wrap gap-4">
           <a
             href="https://github.com/AsishKunta"
             target="_blank"
@@ -70,6 +88,7 @@ function App() {
             Resume
           </a>
         </div>
+      </div>
       </section>
 
       <FeaturedElevateAI />
@@ -105,30 +124,31 @@ function App() {
       </section>
 
       <section
-        id="skills"
+        id="focus"
         className="mx-auto max-w-6xl px-6 py-20"
       >
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
-          Core Focus Areas
+          Technical Focus Areas
         </p>
 
         <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {[
-            "Backend APIs & Services",
-            "Scheduling Algorithms",
-            "Event-Driven Systems",
-            "System Simulation",
-            "Database Architecture",
-            "Testing Infrastructure",
-            "CI/CD Pipelines",
-            "REST API Design",
-            "Production Deployment",
+            { title: "Backend Systems", details: "Python · FastAPI · Node.js" },
+            { title: "Scheduling & Simulation", details: "FCFS · SCAN · Queue Management" },
+            { title: "API Engineering", details: "REST APIs · Validation · Authentication" },
+            { title: "Databases", details: "PostgreSQL · SQL" },
+            { title: "Testing & Tooling", details: "Pytest · Git · Deployment Workflows" },
           ].map((item) => (
             <div
-              key={item}
-              className="rounded-xl border border-slate-800 bg-slate-900/60 p-5 text-slate-300"
+              key={item.title}
+              className="rounded-3xl border border-slate-800 bg-slate-900/60 p-6"
             >
-              {item}
+              <p className="text-sm font-semibold text-white">
+                {item.title}
+              </p>
+              <p className="mt-3 text-sm leading-6 text-slate-300">
+                {item.details}
+              </p>
             </div>
           ))}
         </div>
@@ -159,9 +179,41 @@ function App() {
           ].map((item) => (
             <div
               key={item}
-              className="rounded-xl border border-slate-800 bg-slate-900/60 p-5 text-slate-300"
+              className="rounded-3xl border border-slate-800 bg-slate-900/60 p-5 text-slate-300"
             >
               {item}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section
+        className="mx-auto max-w-6xl px-6 py-20"
+      >
+        <div className="mb-10">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
+            Technical Challenges Solved
+          </p>
+
+          <h2 className="mt-4 text-4xl font-bold text-white">
+            Systems problems addressed with engineering rigor
+          </h2>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          {[
+            "Preventing starvation in scheduling queues",
+            "Direction-aware dispatch optimization",
+            "Scalable REST API validation workflows",
+            "Concurrent request handling simulation",
+          ].map((item) => (
+            <div
+              key={item}
+              className="rounded-3xl border border-slate-800 bg-slate-900/60 p-6"
+            >
+              <p className="text-sm leading-6 text-slate-300">
+                {item}
+              </p>
             </div>
           ))}
         </div>

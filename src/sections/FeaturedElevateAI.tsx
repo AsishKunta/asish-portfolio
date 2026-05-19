@@ -1,18 +1,16 @@
 function FeaturedElevateAI() {
   const terminalLines = [
-    '[01:00:12] scheduler: loading traffic profile "weekday-rush"',
-    '[01:00:12] elevator-1: positioned @ floor 1, idle',
-    '[01:00:13] request: floor 12 → destination 2 (peak inbound)',
-    '[01:00:13] dispatcher: assign elevator-3 (nearest, moving down)',
-    '[01:00:13] elevator-3: route [12 → 5 → 2], estimated 18s',
-    '[01:00:14] queue: 8 active requests, 2 deferred',
-    '[01:00:15] scheduler: balancing load, avoiding starvation',
-    '[01:00:16] event: peak-load adjustment triggered',
-    '[01:00:18] elevator-2: reroute via floor 8 for service window',
-    '[01:00:20] metrics: avg-wait=22.4s, throughput=57 req/min',
-    '[01:00:22] debug: fairness score = 0.94, congestion = 0.18',
-    '[01:00:24] dispatcher: apply SCAN+priority override',
-    '[01:00:27] report: service stability 99.8%, backlog 3 requests',
+    '[12:04:21] Request added → Floor 3 UP',
+    '[12:04:22] Elevator 1 assigned',
+    '[12:04:24] Dispatcher: nearest-car selection complete',
+    '[12:04:25] Pickup complete',
+    '[12:04:27] Queue depth: 6 active, 2 deferred',
+    '[12:04:28] Scheduler: applying SCAN dispatch optimization',
+    '[12:04:29] Elevator 3 rerouted via floor 7',
+    '[12:04:31] Request serviced',
+    '[12:04:33] Metrics: avg-wait=18.7s, throughput=62 req/min',
+    '[12:04:35] Fairness score=0.92, starvation risk=low',
+    '[12:04:37] System state: stable, load 83%',
   ];
 
   return (
@@ -27,7 +25,7 @@ function FeaturedElevateAI() {
         </h2>
 
         <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
-          A terminal-style simulation preview illustrating event-driven elevator scheduling, load balancing, and system stability metrics in a backend-focused, minimal presentation.
+          Terminal-style logs that show elevator dispatch, queue decisions, and real-time scheduling behavior in a systems-oriented engineering format.
         </p>
       </div>
 
@@ -40,7 +38,7 @@ function FeaturedElevateAI() {
               </p>
 
               <p className="mt-3 text-2xl font-bold text-white">
-                Dynamic load balancing · Fairness · Throughput
+                Load balancing · dispatch accuracy · production stability
               </p>
             </div>
 
@@ -53,8 +51,8 @@ function FeaturedElevateAI() {
             {[
               { label: "Elevators", value: "4" },
               { label: "Events / sec", value: "18.3" },
-              { label: "Avg Wait", value: "21s" },
-              { label: "Peak Load", value: "110%" },
+              { label: "Avg Wait", value: "18.7s" },
+              { label: "System Load", value: "83%" },
             ].map((item) => (
               <div key={item.label} className="rounded-2xl border border-slate-800 bg-slate-950/80 p-4">
                 <p className="text-xs uppercase tracking-[0.2em] text-slate-500">

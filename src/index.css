@@ -3,3 +3,19 @@
 html {
   scroll-behavior: smooth;
 }
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 34px 34px;
+  opacity: 0.36;
+  transform: translateZ(0);
+}
+
+.hero-glow {
+  background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 32%),
+    radial-gradient(circle at 20% 80%, rgba(15, 23, 42, 0.85), transparent 40%);
+  filter: blur(50px);
+  opacity: 0.75;
+}
