@@ -27,7 +27,7 @@ const projects = [
   },
 ];
 
-const coursework = [
+const coursework: Array<[string, string[]]> = [
   ["Core CS", ["Data Structures", "Algorithms", "Software Engineering", "Programming Languages"]],
   ["Systems", ["Systems Programming", "Computer Networks", "Computer Organization", "Foundations of Cybersecurity"]],
   ["AI / ML", ["Machine Learning", "Artificial Intelligence", "Applied AI", "Natural Language Processing", "Software Development for AI"]],
