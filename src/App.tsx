@@ -37,7 +37,7 @@ function App() {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = async () => {
-    await navigator.clipboard.writeText("asishkunta@gmail.com");
+    await navigator.clipboard.writeText("asishsrisaikunta@my.unt.edu");
     setCopied(true);
     window.setTimeout(() => setCopied(false), 1800);
   };
@@ -109,7 +109,7 @@ function App() {
         <div className="mt-10 grid gap-5 lg:grid-cols-3">{coursework.map(([label, items]) => <div key={label} className="rounded-xl border border-white/10 bg-[#0b1627] p-6"><h3 className="font-bold text-white">{label}</h3><div className="mt-5 flex flex-wrap gap-2">{items.map((item) => <span key={item} className="rounded-md bg-slate-800 px-3 py-2 text-sm text-slate-300">{item}</span>)}</div></div>)}</div>
       </section>
 
-      <section id="contact" className="border-t border-white/10 bg-[#0b1627]"><div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 px-5 py-16 sm:px-8 md:flex-row md:items-end"><div><p className="text-sm font-bold uppercase tracking-[0.18em] text-cyan-300">Contact</p><h2 className="mt-4 text-3xl font-bold text-white">Let’s connect.</h2><a href="mailto:asishkunta@gmail.com" className="mt-4 block text-lg text-slate-300 hover:text-cyan-200">asishkunta@gmail.com</a></div><div className="flex flex-wrap gap-3"><button type="button" onClick={copyEmail} className="rounded-md border border-white/20 px-4 py-2.5 text-sm font-semibold text-white hover:border-cyan-300 hover:text-cyan-200">{copied ? "Email copied" : "Copy email"}</button><a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="rounded-md bg-cyan-300 px-4 py-2.5 text-sm font-bold text-slate-950 hover:bg-cyan-200">Open resume</a></div></div></section>
+      <section id="contact" className="border-t border-white/10 bg-[#0b1627]"><div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 px-5 py-16 sm:px-8 md:flex-row md:items-end"><div><p className="text-sm font-bold uppercase tracking-[0.18em] text-cyan-300">Contact</p><h2 className="mt-4 text-3xl font-bold text-white">Let’s connect.</h2><a href="mailto:asishsrisaikunta@my.unt.edu" className="mt-4 block text-lg text-slate-300 hover:text-cyan-200">asishsrisaikunta@my.unt.edu</a><a href="tel:+19452906933" className="mt-2 block text-lg text-slate-300 hover:text-cyan-200">+1 (945) 290-6933</a></div><div className="flex flex-wrap gap-3"><button type="button" onClick={copyEmail} className="rounded-md border border-white/20 px-4 py-2.5 text-sm font-semibold text-white hover:border-cyan-300 hover:text-cyan-200">{copied ? "Email copied" : "Copy email"}</button><a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="rounded-md bg-cyan-300 px-4 py-2.5 text-sm font-bold text-slate-950 hover:bg-cyan-200">Open resume</a></div></div></section>
       <footer className="bg-[#08111f] py-7"><div className="mx-auto flex max-w-6xl flex-col justify-between gap-2 px-5 text-sm text-slate-500 sm:flex-row sm:px-8"><span>© 2026 Asish Sri Sai Kunta</span><span>React · TypeScript · Vite · Tailwind CSS</span></div></footer>
     </main>
   );
