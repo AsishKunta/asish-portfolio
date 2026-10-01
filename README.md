@@ -1,70 +1,52 @@
-# Asish Portfolio
+# Asish Sri Sai Kunta — Portfolio
 
-Engineering-focused portfolio showcasing backend systems, simulation architecture, scalable applications, and algorithmic software engineering projects.
+A recruiter-focused software engineering portfolio for backend, systems, and AI-oriented roles.
 
-## Featured Areas
+## Focus
 
-- Backend Engineering
-- System Design
-- Simulation Architecture
-- Scheduling Algorithms
-- API Development
-- Scalable Application Design
+- Backend engineering and API design
+- Authentication, authorization, and database-backed workflows
+- Systems programming, algorithms, and simulation
+- Resource-efficient LLM research and practical ML experimentation
 
-## Projects
-
-### ElevateAI
-Real-time elevator scheduling and optimization simulator built in Python.
-
-Focused on:
-- FCFS and SCAN scheduling algorithms
-- event-driven simulation
-- multi-elevator coordination
-- queue management
-- runtime metrics and state tracking
+## Featured Projects
 
 ### Campus Lost & Found
-Full-stack lost and found management platform built with:
-- Node.js
-- Express
-- PostgreSQL
-- REST APIs
 
-Focused on scalable CRUD workflows, filtering systems, and backend architecture.
+A full-stack platform for reporting and recovering campus property.
 
-### One Step Scheduler
-AI-powered campus event management platform using:
-- React
-- FastAPI
-- PostgreSQL
+- Node.js, Express, PostgreSQL, REST APIs, Vercel, and Render
+- Lost/found reports with image support, search, filters, and sorting
+- Student/admin dashboards, claims workflow, messaging, notifications, and private admin notes
+- Explainable candidate matching using category, name, location, description, and date signals
+- Server-side sessions, HTTP-only cookies, bcrypt hashing, role-based authorization, ownership checks, and restricted CORS
 
-Focused on role-based systems, authentication flows, and scalable API design.
+### ElevateAI
 
----
+A Python elevator scheduling and optimization simulator.
+
+- FCFS and SCAN scheduling strategies
+- Modular scheduler engine and multi-elevator traffic handling
+- Fairness, congestion, wait-time behavior, and event-driven simulation
+- Automated scheduler tests
+
+## Research
+
+Undergraduate research explores ways to reduce the compute, memory, and energy requirements of large language models while maintaining useful performance.
+
+Current work includes supervised learning, regression, gradient descent, loss functions, model evaluation, Python experimentation, reproducible documentation, and linear regression implemented from first principles. Evaluation work uses MSE, MAE, RMSE, and R².
+
+## Relevant Coursework
+
+**Core CS:** Data Structures, Algorithms, Software Engineering, Programming Languages
+
+**Systems:** Systems Programming, Computer Networks, Computer Organization, Foundations of Cybersecurity
+
+**AI / ML:** Machine Learning, Artificial Intelligence, Applied AI, Natural Language Processing, Software Development for AI
 
 ## Tech Stack
 
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- Python
-- FastAPI
-- Node.js
-- PostgreSQL
-
----
-
-## Features
-
-- Recruiter-focused engineering portfolio
-- Responsive UI
-- Modular React architecture
-- Resume integration
-- GitHub and LinkedIn integration
-- Smooth navigation and project showcase
-
----
+React · TypeScript · Vite · Tailwind CSS · Node.js · Express · PostgreSQL · Python
 
 ## Local Development
 
@@ -73,8 +55,6 @@ npm install
 npm run dev
 ```
 
----
-
 ## Live Portfolio
 
-[Asish Portfolio](https://asish-portfolio-r4c4evgxv-asishkuntas-projects.vercel.app/)
+[View the portfolio](https://asish-portfolio-r4c4evgxv-asishkuntas-projects.vercel.app/)
